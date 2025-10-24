@@ -1,5 +1,19 @@
 const convertButton = document.querySelector(".convertButton");
-const currencySelect = document.querySelector(".currencySelect");
+const currencySelect = document.querySelector(".toCurrency");
+const inputCurrency = document.querySelector(".inputCurrency");
+
+inputCurrency.addEventListener("input", (e) => {
+  let value = e.target.value.replace(/\D/g, "");
+  value = (parseFloat(value) / 100).toFixed(2);
+  e.target.value = value
+    ? value
+        .toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        })
+    : "";
+});
+
 
 function convertValues() {
     const inputCurrency = document.querySelector(".inputCurrency").value;
@@ -38,6 +52,12 @@ function convertValues() {
             currency: "BTC",
         }).format(inputCurrency / bitcoinToDay);
     }
+    if (currencySelect.value === "real") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+        }).format(inputCurrency);
+    }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
@@ -47,8 +67,8 @@ function convertValues() {
 };
 
 function changeCurrency () {
-    const currencyName = document.getElementById("currencyName");
-    const currencyImage = document.getElementById("currencyImage");
+    const currencyName = document.getElementById("toCurrencyName");
+    const currencyImage = document.getElementById("toCurrencyImage");
 
     if (currencySelect.value === "dolar") {
         currencyImage.src = "./assets/dolar.png";
@@ -84,6 +104,7 @@ function changeCurrency () {
 
     convertValues();
 }
+
 
 currencySelect.addEventListener ('change', changeCurrency);
 convertButton.addEventListener('click', convertValues);
