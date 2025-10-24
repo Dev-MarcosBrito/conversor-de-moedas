@@ -1,6 +1,6 @@
 # 💱 Conversor de Moedas  
 
-Um projeto simples e funcional desenvolvido com o objetivo de **aperfeiçoar meus conhecimentos em JavaScript**, dentro da **formação Full Stack do [DevClub](https://www.youtube.com/@canaldevclub)**.  
+Um projeto simples e funcional desenvolvido com o objetivo de **aperfeiçoar meus conhecimentos em JavaScript**, dentro da **formação Full Stack do [DevClub](https://rodolfomori.com.br/)**.  
 Este conversor realiza a conversão de **Real (BRL)** para **Dólar (USD)**, **Euro (EUR)**, **Libra (GBP)** e **Bitcoin (BTC)**.  
 
 > 🚧 **Observação:** Os valores das moedas são **fictícios**, pois o projeto ainda não está conectado a uma API real de cotações.  
