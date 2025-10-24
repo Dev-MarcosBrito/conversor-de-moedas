@@ -45,3 +45,4 @@ O layout foi desenvolvido com **design responsivo**, garantindo uma boa experiê
 
 ## 🖼️ Demonstração  
 
+<img src="https://github.com/Dev-MarcosBrito/conversor-de-moedas/blob/main/assets/preview.png?raw=true">
