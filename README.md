@@ -45,6 +45,3 @@ O layout foi desenvolvido com **design responsivo**, garantindo uma boa experiê
 
 ## 🖼️ Demonstração  
 
-*(Adicione aqui uma imagem ou GIF do projeto rodando, por exemplo:)*  
-```md
-![Preview do projeto](assets/preview.png)
